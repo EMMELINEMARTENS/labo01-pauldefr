@@ -1,15 +1,15 @@
 import '../styles/main.css';
 
 const helloWorld = () => {
-  // get our app container
-  const app = document.getElementById('app');
+// get our app container
+    const app = document.getElementById('app');
 
-  // create a new DOM element
-  const element = document.createElement('div');
-  element.innerHTML = 'Hello World!';
+    // create a new DOM element
+    const element = document.createElement('div');
+    element.innerHTML = 'Tinderbish';
 
-  // add to our app container
-  app.appendChild(element);
+    // add to our app container
+    app.appendChild(element);
 };
 
 // start hellWorld app
