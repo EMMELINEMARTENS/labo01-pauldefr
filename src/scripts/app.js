@@ -1,16 +1,23 @@
-import '../styles/main.css';
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 
-const helloWorld = () => {
-// get our app container
-    const app = document.getElementById('app');
+// import '../styles/main.css';
 
-    // create a new DOM element
-    const element = document.createElement('div');
-    element.innerHTML = 'Tinderbish';
-
-    // add to our app container
-    app.appendChild(element);
-};
-
-// start hellWorld app
-helloWorld();
+/* eslint-disable-next-line no-plusplus */
+for (let i = 0; i < 10; i++) {
+    const users = () => {
+      // getting data
+      fetch('https://randomuser.me/api/?results=10')
+        .then((response) => response.json())
+        .then((data) => data.results)
+        .catch((err) => err.message);
+    };
+  
+    const show = () => {
+      // show users
+    };
+  }
+  
+  users();
+  
+  // localstorage
