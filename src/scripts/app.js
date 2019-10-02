@@ -15,7 +15,7 @@ const fetchfunc = () => {
       console.log(data);
       UsersCreated(data.results);
     };
-  .catch((err) => colnsole.log(error.message));
+  .catch((err) => console.log(error.message));
 };
 
 for (let i = 0; i < users.length; i++) {
