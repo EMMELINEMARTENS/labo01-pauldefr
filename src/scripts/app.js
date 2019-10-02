@@ -26,18 +26,12 @@ function UsersCreated(users) {
     const header = document.createElement('header');
     const nav = document.createElement('nav');
     const navul = document.createElement('navul');
-
-    const image = document.createElement('img');
-    image.className = 'profpic';
-
-    const profname = document.createElement('li');
-    profname.id = 'name';
-    const age = document.createElement('li');
-    age.id = 'age';
-    const residence = document.createElement('li');
-    residence.id = 'residence';
-    const country = document.createElement('li');
-    country.id = 'country';
+    const image = document.getElementById('img');
+    const profname = document.getElementById('name'); 
+    const age = document.getElementById('age');
+    const residence = document.getElementById('residence');
+    const country = document.getElementById('country');
+    
 
     // buttons
     const likebutton = document.getElementById('like');
@@ -64,16 +58,16 @@ function UsersCreated(users) {
     app.appendChild(likebutton);
     app.appendChild(dislikebutton);
   }
-}
+
 
 // localstorage
 
-const saveInStorage = (users) => {
+/* const saveInStorage = (users) => {
   const storageUsers = JSON.parse(localStorage.getItem('users'));
 };
 
 localStorage.setItem('users', JSON.stringify(storageUsers.concat(users)));
 const onSwipeClick = () => {
     swipeCounter += 1;
-    if (swipeCounter % 10 === 9)fetchfunct().
-}
+    if (swipeCounter % 10 === 9)fetchfunct().  
+    }; */
